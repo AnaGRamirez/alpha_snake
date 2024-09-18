@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="welcome-page">
+      <div class="moving-flowers"></div>
+      <h1>Welcome to Alpha Snake</h1>
+      <div class="buttons">
+        <!-- Ensure buttons have proper onclick handlers -->
+        <button onclick="navigateToPage('easy')">Easy</button>
+        <button onclick="navigateToPage('medium')">Medium</button>
+        <button onclick="navigateToPage('hard')">Hard</button>
+      </div>
+    </div>
+
+    <script>
+      // JavaScript function to navigate to the appropriate page
+      function navigateToPage(difficulty) {
+        window.location.href = difficulty + ".html"; // Redirect to 'easy.html', 'medium.html', or 'hard.html'
+      }
+    </script>
+  </body>
+</html>
